@@ -59,5 +59,16 @@
     "example:4": "ts-node -r tsconfig-paths/register examples/4-routing.ts",
     "example:5": "ts-node -r tsconfig-paths/register examples/5-topic.ts",
     "example:6": "ts-node -r tsconfig-paths/register examples/6-rpc.ts"
-  }
+  },
+  "keywords": [
+    "amqp",
+    "rabbitmq",
+    "nest",
+    "nestjs",
+    "nest-rabbitmq",
+    "nestjs-rabbitmq",
+    "nest-amqp",
+    "nestjs-amqp",
+    "typescript"
+  ]
 }
