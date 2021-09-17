@@ -1,4 +1,4 @@
-# @mikilian/rabbitmq-module
+# @mikilian/nest-rabbitmq
 
 A wrapper of the [AMQP library](https://www.npmjs.com/package/amqplib) for [NestJS](https://nestjs.com)
 to provide fast communication between services. The idea behind it is to provide possible ways of
@@ -8,17 +8,17 @@ communication with a message system without having to write a lot of code.
 
 ```bash
 # using yarn
-yarn install @mikilian/rabbitmq-module
+yarn install @mikilian/nest-rabbitmq
 
 # using npm
-npm install --save @mikilian/rabbitmq-module
+npm install --save @mikilian/nest-rabbitmq
 ```
 
 ## Usage
 
 ```ts
 import { Module } from '@nestjs/common';
-import { RabbitMQModule } from '@mikilian/rabbitmq-module'
+import { RabbitMQModule } from '@mikilian/nest-rabbitmq'
 
 @Module({
     imports: [
@@ -37,7 +37,7 @@ You can also use a factory to create the configuration file.
 ```ts
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { RabbitMQModule } from '@mikilian/rabbitmq-module'
+import { RabbitMQModule } from '@mikilian/nest-rabbitmq'
 
 @Module({
     imports: [
