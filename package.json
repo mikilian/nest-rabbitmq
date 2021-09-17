@@ -1,8 +1,8 @@
 {
   "name": "@mikilian/nest-rabbitmq",
   "version": "1.0.0",
-  "main": "dist/src/main",
-  "types": "dist/src/main.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "Michael Kilian",
@@ -47,7 +47,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\"",
     "start:auth": "nest start",
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/index.js",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
