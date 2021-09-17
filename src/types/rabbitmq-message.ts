@@ -9,7 +9,7 @@ import { RabbitMQCommonMessageFields, RabbitMQMessageFields } from './natives';
 import { RabbitMQResponse } from './rabbitmq-response';
 
 export class RabbitMQMessage<
-  T extends RabbitMQCommonMessageFields = RabbitMQMessageFields,
+    T extends RabbitMQCommonMessageFields = RabbitMQMessageFields,
   >
   extends RabbitMQResponse
   implements AmqpMessage<T>
