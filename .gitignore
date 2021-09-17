@@ -1,0 +1,32 @@
+# npm packages directory
+node_modules/
+
+# ignore symlink (to reduce the usage of disk space)
+node_modules
+
+
+# compiled code
+dist/
+bundle/
+
+# custom docker data during development
+/**/docker/data/
+
+# jetbrains ide files
+.idea/
+
+# vscode configuration
+.vscode/
+
+# log files
+*.log
+runenv
+*.env
+
+# coverage output
+coverage/
+
+# custom nestjs modules
+src/environment
+update.js
+settings.json
