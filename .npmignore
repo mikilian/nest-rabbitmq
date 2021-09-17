@@ -24,3 +24,4 @@ webpack.config.js
 runenv
 settings.json
 update.js
+tsconfig.build.tsbuildinfo
