@@ -1,0 +1,63 @@
+{
+  "name": "@mikilian/nest-rabbitmq",
+  "version": "1.0.0",
+  "main": "dist/src/main",
+  "types": "dist/src/main.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Michael Kilian",
+    "email": "michael.kilian2406@gmail.com",
+    "url": "https://gitlab.com/miklian"
+  },
+  "repository": "https://github.com/mikilian/nest-rabbitmq",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^8.1.1",
+    "@nestjs/common": "^8.0.6",
+    "@nestjs/config": "^1.0.1",
+    "@nestjs/core": "^8.0.6",
+    "@nestjs/schematics": "^8.0.3",
+    "@nestjs/testing": "^8.0.6",
+    "@types/amqplib": "^0.8.2",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.1",
+    "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.2.0",
+    "prettier": "^2.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build:prod": "yarn prebuild && nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\"",
+    "start:auth": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "example:1": "ts-node -r tsconfig-paths/register examples/1-listener.ts",
+    "example:2": "ts-node -r tsconfig-paths/register examples/2-worker.ts",
+    "example:3": "ts-node -r tsconfig-paths/register examples/3-subscriber.ts",
+    "example:4": "ts-node -r tsconfig-paths/register examples/4-routing.ts",
+    "example:5": "ts-node -r tsconfig-paths/register examples/5-topic.ts",
+    "example:6": "ts-node -r tsconfig-paths/register examples/6-rpc.ts"
+  }
+}
