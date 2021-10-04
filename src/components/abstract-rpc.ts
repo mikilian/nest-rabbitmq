@@ -57,10 +57,10 @@ export abstract class AbstractRabbitMQRpc<
               }
             }
 
-            if (typeof e.name === 'string') {
+            if (typeof e.constructor.name === 'string') {
               this.replyToQueue(channel, msg, {
                 exception: {
-                  name: e.name,
+                  name: e.constructor.name,
                   message: e.message,
                 },
               });
