@@ -6,6 +6,8 @@ communication with a message system without having to write a lot of code.
 
 ## Installation
 
+> Consider adding `@types/amqplib` as development dependency when using TypeScript
+
 ```bash
 # using yarn
 yarn install @mikilian/nest-rabbitmq
